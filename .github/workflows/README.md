@@ -1,7 +1,10 @@
 # Initial CI tasks with GitHub Actions for syntax checking, light testing, and repo management
 
+### Directory Structure
+```
 .github.workflows // Defines GitHub Actions workflows for CI.
 └── ci.yaml		  // Automated build and test.
+```
 
 This GitHub Actions workflow serves as an initial step in the continuous integration pipeline for quick feedback on commits. For instance, it:
 
