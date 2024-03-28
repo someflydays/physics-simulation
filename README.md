@@ -31,8 +31,8 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ### Contact
 
-Derek Martin - derekmartinnj@gmail.com
-LinkedIn - https://www.linkedin.com/in/derekmartin0000/
+Derek Martin - derekmartinnj@gmail.com<br>
+LinkedIn - https://www.linkedin.com/in/derekmartin0000/<br>
 Project Link - https://github.com/someflydays/physics-simulation
 
 ### Acknowledgments
