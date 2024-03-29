@@ -9,13 +9,13 @@ physics-simulation/
 ├── .vscode/          // Configuration files for VS Code, including debug and task definitions.
 │   ├── launch.json   // Defines configurations for debugging.
 │   └── tasks.json    // Includes instructions for compiling C++ code.
-├── bin/              // Compiled binary executables; generated after build.
-├── build/            // Temporary build files; used during compilation.
 ├── include/          // Header files for the project's C++ code.
 ├── src/              // Source files (*.cxx); the main codebase for the physics simulation.
+│   └── main.cxx      // Main entry point for the simulation application.
 ├── test/             // Test scripts and files, including unit and integration tests.
-├── .github/workflows // Defines GitHub Actions workflows for CI.
-│   └── ci.yaml       // Automated build and test.
+├── .github/          // GitHub-specific configurations, including GitHub Actions.
+│   └── workflows/    // Defines GitHub Actions workflows for CI.
+│       └── ci.yaml   // Automated build and test.
 ├── infra/            // Infrastructure as code configurations.
 │   ├── nomad/        // Nomad job specifications for deployment.
 │   ├── puppet/       // Puppet manifests for infrastructure setup and configuration.
