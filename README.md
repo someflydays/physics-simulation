@@ -37,4 +37,4 @@ Project Link - https://github.com/someflydays/physics-simulation
 
 ### Acknowledgments
 
-Hank Childs, for being an excellent professor and teaching me about scientific data visualization at the University of Oregon.
+Hank Childs, for being an excellent professor. Thank you for teaching me about scientific data visualization at the University of Oregon.
