@@ -1,6 +1,6 @@
 # Initial CI tasks with GitHub Actions for syntax checking, light testing, and repo management
 
-### Directory Structure
+## Directory Structure
 ```
 .github/            // GitHub-specific configurations, including GitHub Actions.
 └── workflows/      // Defines GitHub Actions workflows for CI.

@@ -1,7 +1,7 @@
 # Additional project documentation, setup guides, and notes.
 <br>
 
-Table of Contents:<br>
+**Table of Contents:**<br>
 - Setup Guide
 
 <br>

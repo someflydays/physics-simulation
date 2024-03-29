@@ -1,6 +1,6 @@
 # Physics Simulation
 
-### Project Structure
+## Project Structure
 
 ```
 physics-simulation/
@@ -25,16 +25,16 @@ physics-simulation/
 ├── LICENSE           // MIT License.
 └── .gitignore        // Intentionally untracked files to ignore.
 ```
-### License
+## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
-### Contact
+## Contact
 
 Derek Martin - derekmartinnj@gmail.com<br>
 LinkedIn - https://www.linkedin.com/in/derekmartin0000/<br>
 Project Link - https://github.com/someflydays/physics-simulation
 
-### Acknowledgments
+## Acknowledgments
 
 Hank Childs, for being an excellent professor. Thank you for teaching me about scientific data visualization at the University of Oregon.

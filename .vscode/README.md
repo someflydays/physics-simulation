@@ -1,6 +1,6 @@
 # Configuration files for VS Code, including debug and task definitions.
 
-### Directory Structure
+## Directory Structure
 ```
 .vscode/
 ├── launch.json		// Defines configurations for debugging.
