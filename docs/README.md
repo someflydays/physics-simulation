@@ -19,11 +19,11 @@ mkdir build && cd build
 cmake ..
 make
 ```
-This will create an executable named app in the `physics-simulation/build/bin/` directory.
+This will create an executable named `app` in the `physics-simulation/build/bin/` directory.
 
 ### 2. Run the executable
 
-From the `physics-simulation/build/bin/` directory, run the simulation executable using the following command:
+From the `physics-simulation/build/bin/` directory, run the executable using the following command:
 ```bash
 ./app
 ```
@@ -39,7 +39,7 @@ Ensure that Docker is installed on your machine. See Docker's official documenta
 ### 2. Build the Docker container
 From the project's root directory (`physics-simulation`), build the Docker container using the following command:
 ```
-docker build -t physics-simulation .
+docker build -t physics-simulation -f infra/Dockerfile .
 ```
 
 ### 3. Run the Docker container
@@ -47,5 +47,11 @@ From the project's root directory (`physics-simulation`), run the simulation wit
 ```
 docker run --rm physics-simulation
 ```
+<<<<<<< HEAD
 The --rm flag automatically removes the container when it exits. Upon successful execution, you'll see console output indicating properties of several particles, verifying the simulation is running as expected.
 <br>
+=======
+The --rm flag automatically removes the container when it exits.
+You should see console output indicating properties of several particles, verifying the simulation is running as expected.
+<br>
+>>>>>>> 2656a34 (Edited the command to build the Docker container.)
