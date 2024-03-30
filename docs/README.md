@@ -28,6 +28,7 @@ From the `physics-simulation/build/bin/` directory, run the simulation executabl
 ./app
 ```
 You should see console output indicating properties of several particles, verifying the simulation is running as expected.
+
 <br>
 
 ## Running the Application in a Docker Container
