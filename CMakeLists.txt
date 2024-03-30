@@ -1,4 +1,6 @@
-cmake_minimum_required(VERSION 3.10)
+# Instruct CMake to use C++ 11 for compiling the project.
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Specify project name ('physics-simulation') and language used (C++).
 project(physics-simulation CXX)
