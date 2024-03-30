@@ -1,11 +1,13 @@
-# Set the minimum version required for CMake (v3.10)
 cmake_minimum_required(VERSION 3.10)
 
-# Specify project name (PhysicsSimulation) and language used (C++)
-project(PhysicsSimulation CXX)
+# Specify project name ('physics-simulation') and language used (C++).
+project(physics-simulation CXX)
 
-# Define the executable and its source files
-add_executable(app src/main.cxx)
+# Compile each .cxx file from the src/ directory into an executable named 'app'.
+add_executable(app src/main.cxx src/particle.cxx src/simulation.cxx)
+
+# Include the directory where the header files are located.
+include_directories(app PRIVATE include/)
 
 # Set the output directory for binary files to ./bin/
 set_target_properties(app PROPERTIES
