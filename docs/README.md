@@ -27,7 +27,7 @@ From the `physics-simulation/build/bin/` directory, run the simulation executabl
 ```bash
 ./app
 ```
-You should see console output indicating the positions of several particles, verifying the simulation is running as expected.
+You should see console output indicating properties of several particles, verifying the simulation is running as expected.
 <br>
 
 ## Running the Application in a Docker Container
@@ -46,5 +46,5 @@ From the project's root directory (`physics-simulation`), run the simulation wit
 ```
 docker run --rm physics-simulation
 ```
-The --rm flag automatically removes the container when it exits. Upon successful execution, you'll see console output indicating the positions of several particles, verifying the simulation is running as expected.
+The --rm flag automatically removes the container when it exits. Upon successful execution, you'll see console output indicating properties of several particles, verifying the simulation is running as expected.
 <br>
