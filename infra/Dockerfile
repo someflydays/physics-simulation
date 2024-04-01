@@ -9,16 +9,17 @@ RUN apt-get update && \
     apt-get install -y cmake && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy source code, header files, and CMakeLists.txt into the Docker image.
+# Copy source code, header files, test files, and CMakeLists.txt into the Docker image.
 COPY ./src /usr/src/app/src
 COPY ./include /usr/src/app/include
+COPY ./test /usr/src/app/test
 COPY CMakeLists.txt /usr/src/app/
 
-# Compile the application from the root directory (physics-simulation/) where CMakeLists.txt is located.
+# Compile the application from the working directory (/usr/src/app) where CMakeLists.txt is located.
 RUN cmake . && make
 
-# Ensure the path matches the location and name of the generated executable.
+# Ensure that the application is executable.
 RUN chmod +x /usr/src/app/bin/app
 
-# Specify the command to run on container start.
+# Specify the commands to run on container start.
 CMD ["./bin/app"]
