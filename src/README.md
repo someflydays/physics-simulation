@@ -1,4 +1,4 @@
-# Source files (*.cxx); the main codebase for the physics simulation.
+# Source Files (*.cxx); the main codebase for the physics simulation.
 
 This directory contains the implementation files for the physics simulation. It details the operations and interactions that govern the simulated environment.
 
