@@ -7,10 +7,9 @@
     └── ci.yaml	    // Automated build and test.
 ```
 
-This GitHub Actions workflow will serve as an initial step in the continuous integration (CI) pipeline for quick feedback on commits. For instance, it will:
+This GitHub Actions workflow serves as an initial step in the continuous integration (CI) pipeline for quick feedback on commits. Upon every push, it:
 
-- Automatically check the syntax of the C++ code upon every push.
-- Run a small subset of unit tests that don't require the full infrastructure.
-- Automatically manage some GitHub repository tasks or issues, like labeling merged pull requests.
+- Automatically checks the syntax of the C++ code.
+- Runs a small subset of unit-tests with GoogleTest.
 
-GitHub Actions will be used for quick, lightweight CI tasks.
+I am using GitHub Actions for quick, lightweight CI tasks.
