@@ -1,4 +1,4 @@
-# Configuration files for VS Code, including debug and task definitions.
+# Configuration Files for VS Code, Including Debug and Task Definitions.
 
 ## Directory Structure
 ```
