@@ -9,8 +9,21 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-test:
+  syntax-check:
+    runs-on: ubuntu-latest
+    container: gcc:9.5
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: apt-get update && apt-get install -y cmake
+    - name: Run syntax check
+      run: |
+        mkdir build && cd build
+        cmake ..
+        make
 
+  build-and-test:
+    needs: syntax-check
     runs-on: ubuntu-latest
 
     steps:
