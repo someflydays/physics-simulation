@@ -15,11 +15,11 @@ COPY ./include /usr/src/app/include
 COPY ./test /usr/src/app/test
 COPY CMakeLists.txt /usr/src/app/
 
-# Compile the application from the working directory (/usr/src/app) where CMakeLists.txt is located.
-RUN cmake . && make
+# Create a build directory, run cmake and make from within that directory.
+RUN mkdir build && cd build && cmake .. && make
 
-# Ensure that the application is executable.
-RUN chmod +x /usr/src/app/bin/app
+# Set the working directory to the build directory.
+WORKDIR /usr/src/app/build
 
 # Specify the commands to run on container start.
 CMD ["./bin/app"]
