@@ -9,7 +9,7 @@
 class Simulation {
 public:
     std::vector<Particle> particles; // Container for all particles in the simulation
-    void simulateCollision(); // // Simulates a collision that generates a set number of particles.
+    void simulateCollision(); // Simulates a collision that generates a set number of particles.
     void computeForces(); // Computes the forces between all pairs of particles.
     size_t getParticleCount(); // Returns the number of particles in the simulation.
     std::vector<std::tuple<double, double, double>> getParticlePositions() const; // Returns the position of each particle in the simulation as vectors of triples.
