@@ -65,7 +65,7 @@ double Simulation::getTotalLifetime() const {
     return totalLifetime;
 }
 
-// Updates the state of all particles based on the computed forces.
+// Updates the state of all particles based on the computed forces and decay properties.
 void Simulation::updateParticles(double deltaTime) {
     for (auto& particle : particles) {
         particle.update(deltaTime);
