@@ -14,7 +14,7 @@ public:
     size_t getParticleCount(); // Returns the number of particles in the simulation.
     std::vector<std::tuple<double, double, double>> getParticlePositions() const; // Returns the position of each particle in the simulation as vectors of triples.
     double getTotalLifetime() const; // Returns the sum of all particle lifetimes in the simulation.
-    void updateParticles(double deltaTime); // Updates the state of all particles based on the computed forces.
+    void updateParticles(double deltaTime); // Updates the state of all particles based on the computed forces and decay properties.
     void decayParticles(double deltaTime); // Checks for unstable particles and handles their decay.
     void createParticle(ParticleType type, double mass, double charge, double lifetime, double x, double y, double z); // Creates a particle and adds it to the simulation.
 
