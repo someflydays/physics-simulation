@@ -15,7 +15,6 @@ add_executable(app src/main.cxx src/particle.cxx src/simulation.cxx)
 
 # Set the output directory for binary files to ./bin/
 set_target_properties(app PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-set_target_properties(unit PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # Fetch Google Test
 include(FetchContent)
@@ -31,6 +30,9 @@ enable_testing()
 
 # Compile source code and test files into an executable named 'unit'.
 add_executable(unit test/particle-unit-tests.cxx test/simulation-unit-tests.cxx src/particle.cxx src/simulation.cxx)
+
+# Set the output directory for binary files to ./bin/
+set_target_properties(unit PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # Link GoogleTest to the test executable.
 target_link_libraries(unit gtest_main gmock_main)
