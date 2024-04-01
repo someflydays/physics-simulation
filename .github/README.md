@@ -7,9 +7,9 @@
     └── ci.yaml	    // Automated build and test.
 ```
 
-This GitHub Actions workflow serves as an initial step in the continuous integration (CI) pipeline for quick feedback on commits. Upon every push, it:
+This GitHub Actions workflow serves as an initial step in the continuous integration (CI) pipeline for quick feedback on commits. This workflow:
 
 - Automatically checks the syntax of the C++ code.
-- Runs a small subset of unit-tests with GoogleTest.
+- Runs unit-tests with GoogleTest.
 
-I am using GitHub Actions for quick, lightweight CI tasks.
+I am using GitHub Actions for quick, lightweight CI tasks. This pipeline is executed upon every push to the main branch, and upon pull requests targeting main, to catch issues early in the development cycle. In the settings for this repository, I have configured a Branch Protection Rule (for the main branch) that ensures pushes and pull requests only proceed if the unit-tests pass.
