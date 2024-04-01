@@ -1,1 +1,21 @@
-# Intentionally left blank, for now!
+# Automated build and test using GitHub Actions.
+
+name: C++ Initial CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build Docker Image
+      run: docker build -t physics-simulation -f infra/Dockerfile .
+    - name: Run Unit-Tests
+      run: docker run --rm physics-simulation /usr/src/app/build/bin/unit
