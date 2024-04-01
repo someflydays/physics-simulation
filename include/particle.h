@@ -27,7 +27,6 @@ public:
     double charge;         // Charge of the particle in elementary charge units (e)
     double lifetime;       // Lifetime of the particle in seconds (s), relevant for unstable particles
     std::vector<DecayMode> decayModes; // Possible decay modes, relevant for unstable particles
-    
     double position[3];    // Position of the particle in 3D space (x, y, z), in meters (m), relative to an origin point in the simulated 3D space (0, 0, 0)
     double velocity[3];    // Velocity of the particle in 3D space (vx, vy, vz)
     double force[3];       // Net force acting on the particle (fx, fy, fz), in newtons (N)
@@ -36,10 +35,11 @@ public:
     // In a detailed quantum model, I can instead focus on energy and momentum transfer between particles.
 
     // Constructor: Initializes a particle.
-    Particle(ParticleType type, double m, double q, double lt, const std::vector<DecayMode>& dm, double x, double y, double z);
+    Particle(ParticleType type, double m, double q, double lt, double x, double y, double z);
 
     void resetForce(); // Resets the net force on the particle to zero.
-    void addForce(const Particle &other); // Calculates and adds the electromagnetic force exerted by another particle.
+    void setDecayModes(); // Sets two possible decay modes for each particle type. (This is simplified for the purposes of this simulation).
+    void addForce(Particle &other); // Calculates and adds the electromagnetic force exerted by another particle.
     void update(double deltaTime); // Updates the particle's state based on the net force acting on it and the elapsed time.
     bool isUnstable() const { return lifetime > 0; } // Checks the particle's lifetime property to determine if the particle is unstable and subject to decay.
 };
