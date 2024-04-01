@@ -14,7 +14,7 @@ void Simulation::simulateCollision() {
     // In this simulation, all particles are produced with random initial velocities within a range.
     std::uniform_real_distribution<double> velocityDist(-0.1, 0.1);
 
-    // Create particles.
+    // Create particles. Since we are simulating the result of a collision, these particles are created at the same intial position.
     createParticle(ParticleType::PION_POSITIVE, pionMass, +1.0, 0.0, 0.0, 0.0, 0.0); // Stable particle with a lifetime of 0.0
     createParticle(ParticleType::KAON_POSITIVE, kaonMass, +1.0, 1.24e-8, 0.0, 0.0, 0.0); // Unstable particle with a lifetime of 1.24e-8
     createParticle(ParticleType::PROTON, protonMass, +1, 0.0, 0.0, 0.0, 0.0); // Stable particle with a lifetime of 0.0
