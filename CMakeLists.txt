@@ -15,6 +15,7 @@ add_executable(app src/main.cxx src/particle.cxx src/simulation.cxx)
 
 # Set the output directory for binary files to ./bin/
 set_target_properties(app PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set_target_properties(unit PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # Fetch Google Test
 include(FetchContent)
