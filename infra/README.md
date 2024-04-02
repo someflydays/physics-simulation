@@ -15,4 +15,4 @@ infra/            // Infrastructure as code configurations.
 
 A specific version of the gcc image was chosen instead of 'FROM gcc:latest' to avoid potential inconsistencies due to the image being updated. I chose version 9.5 which is the most recent release as of March 2024. <br>
 <br>
-To prevent architecture mismatch issues and ensure compatibility, the application is compiled directly within the Docker container.
+The application is compiled directly within the Docker container to prevent architecture mismatch issues and ensure compatibility.
