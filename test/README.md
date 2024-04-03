@@ -2,8 +2,6 @@
 
 This directory encompasses unit and integration tests to ensure the correctness and stability of the physics simulation code. Utilizing the GoogleTest framework, the tests validate the functionality of individual components and their interactions within the simulation.
 
-<br>
-
 ## Overview
 
 The test suite is divided into unit tests for individual classes (`Particle` and `Simulation`) and integration tests that examine the interaction between these components under various conditions. The tests aim to verify both the logical correctness of the simulation and the adherence to physical laws it models.
