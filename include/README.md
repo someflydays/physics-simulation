@@ -1,4 +1,4 @@
-# Header Files for the Project's C++ Code.
+# Header Files for the Project's C++ Code
 
 This directory contains header files defining the classes and functions used in the physics simulation. 
 
