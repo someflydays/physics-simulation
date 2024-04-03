@@ -1,4 +1,4 @@
-# Additional Project Documentation, Setup Guides, and Notes.
+# Additional Project Documentation, Setup Guides, and Notes
 
 This documentation provides guidance on setting up and running the physics simulation project, both locally and within a Docker container. Follow the steps below to get started with the simulation.
 <br>
