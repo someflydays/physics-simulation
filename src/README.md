@@ -14,26 +14,30 @@ src/                // Source files (*.cxx); the main codebase for the physics s
 
 ### `particle.cxx`
 
-**Particle Class** - Represents a single particle within the simulation. Each particle has properties such as mass, charge, lifetime, position, and velocity. The class provides methods to reset forces, set decay modes based on particle type, calculate and apply electromagnetic forces between particles, and update the particle's state over time.
+**Particle Class** - Represents a single particle within the simulation. Each particle has properties such as mass, charge, lifetime, position, and velocity. The class provides methods to reset forces, set decay modes based on particle type, calculate and apply electromagnetic forces between particles, and update the particle's state over time.<br>
 
-**Physics Calculations** - The `addForce` method implements Coulomb's law to compute the electromagnetic force between two charged particles. The force calculation considers the inverse square of the distance between particles and their charges. This implementation also adheres to Newton's third law by applying equal and opposite forces to both particles involved.
+`addForce` - Implements Coulomb's law to compute the electromagnetic force between two charged particles.
+
+<br>
 
 ### `simulation.cxx`
 
-**Simulation Class** - Manages the overall simulation environment. It is responsible for simulating collisions, creating particles, computing forces between all particles, updating states of all particles, and handling particle decay. 
+**Simulation Class** - Manages the overall simulation environment. It is responsible for simulating collisions, creating particles, computing forces between all particles, updating states of all particles, and handling particle decay.<br>
 
-**Collision Simulation** - The `simulateCollision` method demonstrates a simplified approach to simulating particle collisions. It generates particles with predefined properties and random initial velocities.
+`simulateCollision` - Generates particles with predefined properties and random initial velocities.<br>
 
-**Particle Interactions** - The `computeForces` method is a placeholder for future implementations of interaction forces between all particle pairs. It represents a core part of the simulation where the forces that govern particle motion will be calculated.
+`computeForces` - Represents a core part of the simulation where the forces that govern particle motion will be calculated.<br>
 
-**Updating the Simulation** - The `updateParticles` method progresses the simulation by updating the state of all particles based on computed forces. It also calls `decayParticles` to handle the decay process for unstable particles.
+`updateParticles` - Progresses the simulation by updating the state of all particles based on computed forces. <br>
+
+`decayParticles` - Handles the decay process for unstable particles.
+
+<br>
 
 ### `main.cxx`
 
-**Application Entry Point** - Initializes a `Simulation` instance and runs a simple simulation step to illustrate the functionality. It outputs the properties of the generated particles to verify the simulation's execution.
+*Application Entry Point* - Initializes a Simulation instance and runs a simple simulation step. This file outputs the properties of the generated particles to verify the simulation's execution.
 
-## Physics Concepts
-
-The simulation employs fundamental physics concepts, primarily focusing on Coulomb's law for electromagnetic interactions and basic principles of motion. These concepts are simplified to create a computationally feasible and educational simulation environment that demonstrates the dynamics of particle physics.
+<br>
 
 For more detailed understanding of the simulation logic and the physics principles applied, refer to the in-line comments within each source file.
