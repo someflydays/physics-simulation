@@ -1,4 +1,4 @@
-# Infrastructure as Code Configurations.
+# Infrastructure as Code Configurations
 
 This directory contains configuration files and scripts for deployment and environment management of the physics simulation project.
 
