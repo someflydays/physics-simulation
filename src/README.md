@@ -12,17 +12,17 @@ src/                // Source files (*.cxx); the main codebase for the physics s
 
 ## Implementation Overview
 
-### `particle.cxx`
+### *`particle.cxx`*
 
-**Particle Class** - Represents a single particle within the simulation. Each particle has properties such as mass, charge, lifetime, position, and velocity. The class provides methods to reset forces, set decay modes based on particle type, calculate and apply electromagnetic forces between particles, and update the particle's state over time.<br>
+This file represents a single particle within the simulation. Each particle has properties such as mass, charge, lifetime, position, and velocity. The class provides methods to reset forces, set decay modes based on particle type, calculate and apply electromagnetic forces between particles, and update the particle's state over time.<br>
 
 `addForce` - Implements Coulomb's law to compute the electromagnetic force between two charged particles.
 
 <br>
 
-### `simulation.cxx`
+### *`simulation.cxx`*
 
-**Simulation Class** - Manages the overall simulation environment. It is responsible for simulating collisions, creating particles, computing forces between all particles, updating states of all particles, and handling particle decay.<br>
+This file manages the overall simulation environment. It is responsible for simulating collisions, creating particles, computing forces between all particles, updating states of all particles, and handling particle decay.<br>
 
 `simulateCollision` - Generates particles with predefined properties and random initial velocities.<br>
 
@@ -34,10 +34,12 @@ src/                // Source files (*.cxx); the main codebase for the physics s
 
 <br>
 
-### `main.cxx`
+### *`main.cxx`*
 
-*Application Entry Point* - Initializes a Simulation instance and runs a simple simulation step. This file outputs the properties of the generated particles to verify the simulation's execution.
+This file initializes a Simulation instance and runs a simple simulation step. This file outputs the properties of the generated particles.
 
 <br>
+
+## More Information
 
 For more detailed understanding of the simulation logic and the physics principles applied, refer to the in-line comments within each source file.
