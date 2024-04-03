@@ -10,30 +10,26 @@ include/            // Header files for the project's C++ code.
 └── simulation.h    // Declares the Simulation class managing the simulation and particle interactions.
 ```
 
-<br>
-
 ## File Descriptions
 
 ### `particle.h`
 
-This header file declares the `Particle` class. The class represents a single particle within the simulation. Each particle has properties such as mass, charge, lifetime, position, and velocity. The class also provides methods to reset forces, set decay modes based on particle type, calculate and apply electromagnetic forces between particles, and update the particle's state over time.
+This header file declares the `Particle` class. The class represents a single particle within the simulation. Each particle has properties such as mass, charge, lifetime, position, and velocity. The class also provides methods to reset forces, set decay modes based on particle type, calculate and apply electromagnetic forces between particles, and update the particle's state over time.<br>
 
-Key functionalities:
-**`resetForce`** - Resets the cumulative force acting on the particle to zero, preparing it for the next simulation step.
-**`setDecayModes`** - Initializes possible decay modes for unstable particles, simplifying actual quantum decay processes for feasability purposes.
-**`addForce`** - Implements the electromagnetic interaction between particles based on Coulomb's law.
+**`resetForce`** - Resets the cumulative force acting on the particle to zero, preparing it for the next simulation step.<br>
+**`setDecayModes`** - Initializes possible decay modes for unstable particles, simplifying actual quantum decay processes for feasability.<br>
+**`addForce`** - Implements the electromagnetic interaction between particles based on Coulomb's law.<br>
 **`update`** - Advances the state of the particle based on the current forces and elapsed time, simulating movement and decay.
 
 ### `simulation.h`
 
-This header file declares the `Simulation` class, which manages the overall simulation environment. It is responsible for simulating collisions, creating particles, computing forces between all particles, updating states of all particles, and handling particle decay.
+This header file declares the `Simulation` class, which manages the overall simulation environment. It is responsible for simulating collisions, creating particles, computing forces between all particles, updating states of all particles, and handling particle decay.<br>
 
-Key functionalities:
-**`simulateCollision`** - Simulates a collision that generates a set number of particles.
-**`computeForces`** - Computes the forces between all pairs of particles, using their electromagnetic properties.
-**`getParticleCount`** - Returns the number of particles in the simulation.
-**`getParticlePositions`** - Returns the position of each particle in the simulation as vectors of triples.
-**`getTotalLifetime`** - Returns the sum of all particle lifetimes in the simulation.
-**`updateParticles`** - Updates the state of all particles based on the computed forces and decay properties.
-**`decayParticles`** - Checks for unstable particles and handles their decay.
+**`simulateCollision`** - Simulates a collision that generates a set number of particles.<br>
+**`computeForces`** - Computes the forces between all pairs of particles, using their electromagnetic properties.<br>
+**`getParticleCount`** - Returns the number of particles in the simulation.<br>
+**`getParticlePositions`** - Returns the position of each particle in the simulation as vectors of triples.<br>
+**`getTotalLifetime`** - Returns the sum of all particle lifetimes in the simulation.<br>
+**`updateParticles`** - Updates the state of all particles based on the computed forces and decay properties.<br>
+**`decayParticles`** - Checks for unstable particles and handles their decay.<br>
 **`createParticle`** - Creates a particle and adds it to the simulation.
