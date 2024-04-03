@@ -1,1 +1,1 @@
-# Scripts for Setup, Build Automation, and Utilities.
+# Scripts for Setup and Utilities
