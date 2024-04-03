@@ -1,1 +1,1 @@
-# Puppet manifests for infrastructure setup and configuration.
+# Puppet Manifests
