@@ -21,6 +21,6 @@ Tests are named following the pattern `TEST_F([ClassName]Test, [methodName][Spec
 Tests can be compiled and run as part of the project's build process. Instructions for manually running unit-tests are detailed in the project's `physics-simulation/docs/README.md` file.
 <br>
 
-The unit-tests are also compiled and run within the initial GitHub Actions Continuous Integration (CI) pipeline found in `physics-simulation/.github/workflows/ci.yaml`. This pipeline is executed upon every push to the main branch, and upon pull requests targeting main, to catch issues early in the development cycle. In the settings for this repository, I have configured a Branch Protection Rule (for the main branch) that ensures pushes and pull requests only proceed if the unit-tests pass.
+The unit-tests are also compiled and run within the initial GitHub Actions Continuous Integration (CI) pipeline found in `physics-simulation/.github/workflows/ci.yaml`. This pipeline is executed upon every push to the main branch and upon every pull request targeting the main branch. 
 
 <br>
