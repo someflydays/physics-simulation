@@ -11,7 +11,11 @@ This documentation provides guidance on setting up and running the physics simul
 
 ## Running the Application Locally
 
-### 1. Generate the application's executable
+### 1. Set up CMake
+Ensure that CMake is installed on your machine. See CMake's official documentation for more details: [Getting Started with CMake](https://cmake.org/download/)
+
+
+### 2. Generate the application's executable
 
 To compile the simulation and generate the application's executable, navigate to the project's root directory (`physics-simulation/`) and execute the following commands:
 ```bash
@@ -22,7 +26,7 @@ make
 ```
 This will create an executable named `app` in the `physics-simulation/build/bin/` directory. It will also create a unit-testing executable named `unit` in the `physics-simulation/build/` directory.
 
-### 2. OPTIONAL: Run unit-tests with GoogleTest
+### 3. OPTIONAL: Run unit-tests with GoogleTest
 
 After building the project in Step 1, navigate to the `physics-simulation/build/bin/` directory and execute the following command:
 ```
@@ -30,7 +34,7 @@ After building the project in Step 1, navigate to the `physics-simulation/build/
 ```
 You should see console output indicating that all tests have passed. You should also see a list of the specific tests that have been run. If you would like to view the unit-tests, they are visible in the `physics-simulation/test/` directory.
 
-### 3. Run the simulation
+### 4. Run the simulation
 
 From the `physics-simulation/build/bin/` directory, run the simulation executable using the following command:
 ```bash
@@ -56,18 +60,18 @@ After building the container in Step 1, execute the following command:
 ```
 docker run --rm physics-simulation /usr/src/app/build/unit
 ```
-You should see console output indicating that all tests have passed. You should also see a list of the specific tests that have passed. If you would like to view the unit-tests, they are visible in the `usr/src/app/test/` directory.
+You should see console output indicating that all tests have passed. You should also see a list of the specific tests that have been run. If you would like to view the unit-tests, they are visible in the `usr/src/app/test/` directory.
 <br>
 
 If you would like to run an interactive container based on the Docker image and manually navigate through the filesystem, you can run the following command:
 ```
 docker run -it --rm physics-simulation /bin/bash
 ```
-Once you're in the `build/bin` directory within the container, you can run the unit-tests with the following command:
+Once you've navigated to the `build/bin` directory within the container, you can run the unit-tests with the following command:
 ```
 ./unit
 ```
-You should see console output indicating that all tests have been run. You should also see a list of the specific tests that have passed. If you would like to view the unit-tests, they are visible in the `usr/src/app/test/` directory.
+You should see console output indicating that all tests have passed. You should also see a list of the specific tests that have been run. If you would like to view the unit-test source code files, they are visible in the `usr/src/app/test/` directory.
 <br>
 
 To exit the interactive container, just run the `exit` command.
